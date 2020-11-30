@@ -1,4 +1,4 @@
-# advent-calendar-cralwer
+# advent-calendar-crawler
 
 アドベントカレンダーのRSSをSlackにまとめて登録するやつです。
 
