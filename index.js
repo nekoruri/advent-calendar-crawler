@@ -47,6 +47,9 @@ const crawlQiitaRSS = async function (config, browser) {
         // APIの読み込み待ち
         await page.waitForLoadState(`networkidle`);
 
+        // ページ数分連続リクエストが飛ぶのでウェイトを入れる
+        await sleep(500);
+
         // リンクからカレンダーのURLを取得し、RSSのURLに変換
         const titles = await page.$$(`a.ac-Item_name`);
         const calendars = await Promise.all(titles.map(async elem => await elem.getAttribute(`href`)));
