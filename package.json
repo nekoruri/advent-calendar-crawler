@@ -1,0 +1,16 @@
+{
+  "name": "advent-calendar-crawler",
+  "priavete": true,
+  "version": "1.0.0",
+  "description": "AdventCalendar RSS Crawler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NAKAYAMA Masahiro <aki@nekoruri.jp>",
+  "license": "MIT",
+  "dependencies": {
+    "config": "^3.3.3",
+    "playwright-chromium": "^1.6.2"
+  }
+}
