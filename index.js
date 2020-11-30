@@ -14,10 +14,10 @@ const crawlAdventarRSS = async function (config, browser) {
     // APIの読み込み待ち
     await page.waitForLoadState(`networkidle`);
 
-    // a.titleからカレンダーのURLを取得し、RSSのURLに変換
+    // リンクからカレンダーのURLを取得し、RSSのURLに変換
     const titles = await page.$$(`a.title`);
     const calendars = await Promise.all(titles.map(async elem => await elem.getAttribute(`href`)));
-    const rss = calendars.map(path => `https://adventar.org/${path}.rss`);
+    const rss = calendars.map(path => `https://adventar.org${path}.rss`);
 
     await page.close();
 
@@ -47,7 +47,7 @@ const crawlQiitaRSS = async function (config, browser) {
         // APIの読み込み待ち
         await page.waitForLoadState(`networkidle`);
 
-        // a.titleからカレンダーのURLを取得し、RSSのURLに変換
+        // リンクからカレンダーのURLを取得し、RSSのURLに変換
         const titles = await page.$$(`a.ac-Item_name`);
         const calendars = await Promise.all(titles.map(async elem => await elem.getAttribute(`href`)));
         const foundRss = calendars.map(path => `https://qiita.com${path}/feed`);
