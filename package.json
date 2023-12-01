@@ -11,6 +11,6 @@
   "license": "MIT",
   "dependencies": {
     "config": "^3.3.3",
-    "playwright-chromium": "^1.6.2"
+    "playwright-chromium": "^1.40.1"
   }
 }
