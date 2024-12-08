@@ -1,9 +1,9 @@
 {
-    "year": 2023,
+    "year": 2024,
     "slack": {
         "id": "username@example.jp",
         "password": "PASSWORD",
-        "signinUrl": "https://mohikan.slack.com/workspace-signin",
-        "channelUrl": "https://app.slack.com/client/T0EHMQ4HM/C01ESB7HMRR",
+        "signinUrl": "https://mohikan.slack.com/sign_in_with_password",
+        "channelUrl": "https://app.slack.com/client/T0EHMQ4HM/C08336JBHGT"
     }
 }

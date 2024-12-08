@@ -10,7 +10,8 @@
   "author": "NAKAYAMA Masahiro <aki@nekoruri.jp>",
   "license": "MIT",
   "dependencies": {
-    "config": "^3.3.3",
-    "playwright-chromium": "^1.40.1"
+    "config": "^3.3.12",
+    "playwright": "^1.49.0",
+    "playwright-chromium": "^1.49.0"
   }
 }
